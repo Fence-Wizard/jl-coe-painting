@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>J.L. Coe Painting — Richmond Area Painters</title>
+  <meta name="description" content="J.L. Coe Painting — professional interior & exterior painting, cabinet refinishing, epoxy garage floors. Free estimates. Call (804) 475-6704."/>
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Simple SVG favicon (black + gold paint drop) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%230f172a'/%3E%3Cpath d='M24 8c3.5 5 8 8 8 13a8 8 0 1 1-16 0c0-5 4.5-8 8-13z' fill='%23c59d0b'/%3E%3C/svg%3E">
+
+  <style>
+    :root{
+      --ink:#0f172a;       /* near-black text */
+      --brand:#c59d0b;     /* gold accent */
+      --muted:#64748b;
+      --bg:#ffffff;
+      --card-border:#e6e9ee;
+      --max-width:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:0 1rem}
+    header{padding:2.5rem 1rem 1rem;text-align:center}
+    .pill{display:inline-block;padding:.3rem .65rem;border-radius:999px;border:1px solid var(--card-border);color:var(--muted);font-size:.9rem}
+    h1{font-size:clamp(1.8rem,4.6vw,2.6rem);margin:.3rem 0}
+    .tag{color:var(--muted);margin-bottom:.6rem}
+    .cta{display:inline-block;padding:.7rem 1rem;border-radius:.6rem;text-decoration:none;border:1px solid var(--ink);color:var(--ink);font-weight:600}
+    .cta.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .hero{margin:1rem auto;display:block}
+    .hero img{width:100%;border-radius:10px;border:1px solid var(--card-border);display:block}
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+    .card{border:1px solid var(--card-border);border-radius:.8rem;padding:1rem;background:#fff}
+    .list{padding-left:1.25rem;margin:.25rem 0}
+    .bar{height:1px;background:var(--card-border);margin:2rem 0}
+    .badge{font-weight:700;color:var(--brand)}
+    footer{padding:2rem 1rem;text-align:center;color:var(--muted)}
+    a{color:var(--brand)}
+    .contact{display:grid;gap:1rem}
+    .form-row{margin:.35rem 0}
+    label{font-weight:600;font-size:.95rem;display:block;margin-bottom:.25rem}
+    input[type="text"], input[type="email"], textarea{
+      width:100%;padding:.6rem;border:1px solid var(--card-border);border-radius:.45rem;font-size:1rem
+    }
+    .success{background:#ecffef;border:1px solid #b7efc5;padding:.8rem;border-radius:.5rem;color:#064a22}
+    .error{background:#fff0f0;border:1px solid #f1c0c0;padding:.8rem;border-radius:.5rem;color:#7a1a1a}
+    @media (prefers-color-scheme:dark){
+      :root{--bg:#071024;--ink:#edf2f7;--card-border:#0f172a;--muted:#9fb0c9}
+      body{background:var(--bg);color:var(--ink)}
+      a{color:#fbd26a}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"PaintingContractor",
+    "name":"J.L. Coe Painting",
+    "telephone":"+1-804-475-6704",
+    "email":"lee@jlcoepainting.com",
+    "address":{"@type":"PostalAddress","addressLocality":"Richmond","addressRegion":"VA","addressCountry":"US"},
+    "areaServed":["Richmond","Henrico","Chesterfield","Hanover"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="pill">Licensed & Insured • Free Estimates</div>
+      <h1>J.L. Coe Painting</h1>
+      <p class="tag">Interior & exterior painting • cabinet refinishing • epoxy/flake garage floors</p>
+      <p>
+        <a class="cta primary" href="#contact">Get a Free Estimate</a>
+        <a class="cta" href="tel:+18044756704">Call: (804) 475-6704</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap" role="main">
+    <section class="hero" aria-hidden="false">
+      <img alt="Detailed exterior door with black and gold trim" src="assets/detail-door-trim.jpg">
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Services</h2>
+      <div class="grid" role="list">
+        <div class="card" role="listitem">
+          <h3>Interior Painting</h3>
+          <ul class="list">
+            <li>Walls, ceilings, trim, doors</li>
+            <li>Color consultation & samples</li>
+            <li>Low-VOC and premium finishes</li>
+          </ul>
+        </div>
+        <div class="card" role="listitem">
+          <h3>Exterior Painting</h3>
+          <ul class="list">
+            <li>Whole-house repaints — siding, brick, metal</li>
+            <li>Pressure-washing, prep, and priming</li>
+            <li>Durable, weather-resistant coatings</li>
+          </ul>
+        </div>
+        <div class="card" role="listitem">
+          <h3>Cabinets & Woodwork</h3>
+          <ul class="list">
+            <li>Cabinet refinishing & spraying</li>
+            <li>Stain and top-coat options</li>
+            <li>Fine-finish, furniture-grade work</li>
+          </ul>
+        </div>
+        <div class="card" role="listitem">
+          <h3>Epoxy/Flake Garage Floors</h3>
+          <ul class="list">
+            <li>Crack repair, etch & primer, flake broadcast</li>
+            <li>Multiple color combinations</li>
+            <li>Fast return-to-service</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="bar" role="separator"></div>
+
+    <section id="work" aria-labelledby="work-heading">
+      <h2 id="work-heading">Recent Work</h2>
+      <div class="grid">
+        <img class="card" alt="Exterior repaint in progress - green house" src="assets/green-exterior-front.jpg">
+        <img class="card" alt="Epoxy garage floor finished - grey with blue/white flakes" src="assets/garage-floor-1.jpg">
+        <img class="card" alt="Closeup of epoxy flake finish" src="assets/garage-floor-closeup.jpg">
+        <img class="card" alt="Garage floor after finishing near steps" src="assets/garage-floor-2.jpg">
+        <img class="card" alt="Crew painting yellow house" src="assets/yellow-house-crew-1.jpg">
+        <img class="card" alt="Dormer and trim detail" src="assets/yellow-house-dormer.jpg">
+        <img class="card" alt="Wide shot of finished exterior repaint" src="assets/yellow-house-wide.jpg">
+      </div>
+    </section>
+
+    <div class="bar"></div>
+
+    <section id="service-area">
+      <h2>Service Area</h2>
+      <p>Based in Richmond, VA — serving surrounding areas within ~40 miles. Estimates by appointment only.</p>
+    </section>
+
+    <div class="bar"></div>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact & Free Estimate</h2>
+      <p><strong>Phone:</strong> <a href="tel:+18044756704">(804) 475-6704</a></p>
+      <p class="tag">No physical office — estimates by appointment.</p>
+
+      <!-- Replace YOUR_FORM_ID with the Formspree ID you create (instructions in README) -->
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="card" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="text" placeholder="(804) 555-1234">
+        </div>
+        <div class="form-row">
+          <label for="details">Project Details</label>
+          <textarea id="details" name="message" rows="4" placeholder="Interior/Exterior, rooms/sqft, timeline, photos link…"></textarea>
+        </div>
+
+        <div id="form-feedback" aria-live="polite" style="display:none"></div>
+
+        <p style="margin-top:.5rem">
+          <button class="cta primary" type="submit">Request Estimate</button>
+        </p>
+      </form>
+
+      <p class="tag">Prefer text? Tap to <a href="sms:+18044756704">text (804) 475-6704</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> J.L. Coe Painting · Richmond, VA
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Simple AJAX form submit to Formspree (keeps user on the page)
+    (function(){
+      const form = document.getElementById('contact-form');
+      const feedback = document.getElementById('form-feedback');
+
+      form.addEventListener('submit', async function(evt){
+        evt.preventDefault();
+        feedback.style.display = 'none';
+        const data = new FormData(form);
+
+        try {
+          const resp = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (resp.ok) {
+            form.reset();
+            feedback.textContent = "Thanks — your estimate request has been sent. We'll reach out soon.";
+            feedback.className = "success";
+            feedback.style.display = 'block';
+          } else {
+            const text = await resp.text();
+            feedback.textContent = "Sorry — something went wrong. Please email lee@jlcoepainting.com or call (804) 475-6704.";
+            feedback.className = "error";
+            feedback.style.display = 'block';
+            console.error('Formspree error', resp.status, text);
+          }
+        } catch (err) {
+          feedback.textContent = "Network error. Please try again or email lee@jlcoepainting.com.";
+          feedback.className = "error";
+          feedback.style.display = 'block';
+          console.error(err);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
