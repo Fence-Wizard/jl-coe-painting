@@ -11,7 +11,7 @@ Choose one of the lightweight options:
 ## Editing Content
 All site content lives inside `index.html`.
 1. **Contact details:** Update the email (`lee@jlcoepainting.com`), phone numbers, and service area text in the hero and contact sections.
-2. **Hero & gallery images:** Replace the placeholder assets in the `assets/` folder with your production-ready images. Keep the filenames identical or update the `src` attributes to match new names.
+2. **Hero & gallery images:** `index.html` ships with inline SVG placeholders so the layout works even without photography. Replace each `<img>` `src` with your production-ready asset (local file path, CDN URL, etc.) while keeping the descriptive `alt` text accurate.
 3. **Brand colors:** Modify the CSS variable `--brand` near the top of the `<style>` block to adjust the gold accent shade.
 4. **Structured data:** Update the JSON-LD block in the `<head>` if business details change.
 ## Contact Form (Formspree)
@@ -35,7 +35,7 @@ All site content lives inside `index.html`.
 ```
 .
 ├─ index.html        # Main site markup, styles, and JavaScript
-├─ README.md         # Project documentation (this file)
-├─ .gitignore        # Common development ignores
-├─ CNAME             # Empty placeholder for optional custom domain
-└─ assets/
+├─ assets/
+│  └─ README.md      # Project documentation (this file)
+└─ .gitignore        # Common development ignores
+```
