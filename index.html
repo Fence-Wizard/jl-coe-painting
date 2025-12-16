@@ -9,17 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0f1a24;
+      --bg: #0b0e18;
       --panel: rgba(255, 255, 255, 0.05);
       --panel-strong: rgba(255, 255, 255, 0.09);
-      --text: #f4f1ea;
-      --muted: #d9d3c5;
-      --accent: #d9a441;      /* warm gold */
-      --accent-2: #7aa6c7;    /* soft slate blue */
-      --accent-3: #c1643f;    /* copper */
-      --accent-4: #7bbf72;    /* sage */
-      --border: rgba(255, 255, 255, 0.15);
-      --shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+      --text: #f5f7ff;
+      --muted: #c8ccda;
+      --accent: #ffcc32;      /* yellow stripe */
+      --accent-2: #29e3ff;    /* cyan stripe */
+      --accent-3: #ff3c55;    /* red stripe */
+      --accent-4: #7cf27f;    /* green pop */
+      --border: rgba(255, 255, 255, 0.16);
+      --shadow: 0 25px 80px rgba(0, 0, 0, 0.55);
       --radius: 18px;
       --space: 18px;
     }
@@ -28,10 +28,10 @@
       margin: 0;
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background:
-        radial-gradient(110% 140% at 18% 16%, rgba(122, 166, 199, 0.18), transparent 46%),
-        radial-gradient(120% 140% at 78% -6%, rgba(193, 100, 63, 0.12), transparent 44%),
-        radial-gradient(110% 120% at 52% 90%, rgba(217, 164, 65, 0.14), transparent 48%),
-        linear-gradient(135deg, rgba(12, 22, 32, 0.92), #0b141d),
+        radial-gradient(100% 120% at 20% 15%, rgba(41, 227, 255, 0.16), transparent 45%),
+        radial-gradient(110% 140% at 80% 0%, rgba(255, 60, 85, 0.12), transparent 42%),
+        radial-gradient(120% 120% at 50% 90%, rgba(255, 204, 50, 0.12), transparent 50%),
+        linear-gradient(135deg, rgba(18, 24, 44, 0.92), #080a14),
         var(--bg);
       color: var(--text);
       -webkit-font-smoothing: antialiased;
@@ -42,7 +42,7 @@
       top: 0;
       z-index: 10;
       backdrop-filter: blur(16px);
-      background: linear-gradient(90deg, rgba(10, 18, 28, 0.9), rgba(10, 18, 28, 0.72));
+      background: linear-gradient(90deg, rgba(9, 12, 24, 0.9), rgba(9, 12, 24, 0.7));
       border-bottom: 1px solid var(--border);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
     }
@@ -68,12 +68,12 @@
       width: 42px;
       height: 42px;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-3));
+      background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
       display: grid;
       place-items: center;
-      color: #0f1a24;
+      color: #0b0e18;
       font-weight: 800;
-      box-shadow: 0 15px 40px rgba(217, 164, 65, 0.35);
+      box-shadow: 0 15px 40px rgba(41, 227, 255, 0.35);
       text-transform: uppercase;
     }
     nav {
@@ -100,12 +100,12 @@
       color: #0f172a;
     }
     .btn.primary {
-      background: linear-gradient(120deg, var(--accent), var(--accent-3));
-      box-shadow: 0 16px 40px rgba(217, 164, 65, 0.35);
-      color: #0f1a24;
+      background: linear-gradient(120deg, var(--accent-2), var(--accent-3));
+      box-shadow: 0 16px 40px rgba(41, 227, 255, 0.35);
+      color: #0b0e18;
     }
     .btn.secondary {
-      background: linear-gradient(120deg, rgba(122, 166, 199, 0.2), rgba(217, 164, 65, 0.18));
+      background: linear-gradient(120deg, rgba(255, 204, 50, 0.18), rgba(41, 227, 255, 0.18));
       border-color: rgba(255, 255, 255, 0.18);
       color: var(--text);
     }
@@ -121,9 +121,9 @@
       gap: 10px;
       padding: 10px 14px;
       border-radius: 999px;
-      background: linear-gradient(120deg, rgba(122, 166, 199, 0.2), rgba(217, 164, 65, 0.2));
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      color: #f5f1ea;
+      background: linear-gradient(120deg, rgba(34, 211, 238, 0.2), rgba(139, 92, 246, 0.2));
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #e8eaff;
       font-weight: 600;
       letter-spacing: 0.2px;
     }
@@ -144,7 +144,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(120deg, rgba(12, 18, 28, 0.9), rgba(12, 18, 28, 0.5)), url('assets/IMG_7119.jpg') center/cover;
+      background: linear-gradient(120deg, rgba(8, 10, 20, 0.9), rgba(8, 10, 20, 0.45)), url('assets/IMG_0743.jpg') center/cover;
       z-index: 0;
       filter: saturate(1.1);
     }
@@ -153,7 +153,7 @@
       position: absolute;
       width: 360px;
       height: 360px;
-      background: radial-gradient(circle, rgba(217, 164, 65, 0.2), transparent 55%);
+      background: radial-gradient(circle, rgba(255, 204, 50, 0.22), transparent 55%);
       top: -120px; right: -80px;
       z-index: 0;
     }
@@ -173,18 +173,18 @@
       filter: blur(0px);
       opacity: 0.55;
     }
-    .orb-1 { background: radial-gradient(circle, rgba(122, 166, 199, 0.28), transparent 60%); top: -40px; left: -30px; }
-    .orb-2 { background: radial-gradient(circle, rgba(193, 100, 63, 0.28), transparent 60%); bottom: -60px; right: 80px; animation-delay: 1.6s; }
-    .orb-3 { background: radial-gradient(circle, rgba(217, 164, 65, 0.24), transparent 60%); top: 30%; right: -40px; animation-delay: 0.8s; }
+    .orb-1 { background: radial-gradient(circle, rgba(41, 227, 255, 0.4), transparent 60%); top: -40px; left: -30px; }
+    .orb-2 { background: radial-gradient(circle, rgba(255, 60, 85, 0.4), transparent 60%); bottom: -60px; right: 80px; animation-delay: 1.6s; }
+    .orb-3 { background: radial-gradient(circle, rgba(255, 204, 50, 0.32), transparent 60%); top: 30%; right: -40px; animation-delay: 0.8s; }
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       padding: 9px 12px;
       border-radius: 999px;
-      background: rgba(217, 164, 65, 0.16);
-      color: #fff9ec;
-      border: 1px solid rgba(217, 164, 65, 0.35);
+      background: rgba(255, 183, 3, 0.15);
+      color: #fff7e6;
+      border: 1px solid rgba(255, 183, 3, 0.35);
       font-size: 14px;
     }
     .hero h1 {
@@ -211,9 +211,9 @@
     .chip {
       padding: 14px;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(122, 166, 199, 0.14), rgba(217, 164, 65, 0.14));
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: #f7f4ed;
+      background: linear-gradient(135deg, rgba(41, 227, 255, 0.14), rgba(255, 60, 85, 0.14));
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #fdfdfd;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -236,8 +236,8 @@
       width: 10px;
       height: 10px;
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
-      box-shadow: 0 0 0 6px rgba(122, 166, 199, 0.18);
+      background: linear-gradient(135deg, #22d3ee, #7c3aed);
+      box-shadow: 0 0 0 6px rgba(124, 58, 237, 0.15);
     }
     .swatches {
       display: flex;
@@ -259,7 +259,7 @@
       padding: 12px;
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.16);
-      background: linear-gradient(90deg, rgba(217, 164, 65, 0.2), rgba(122, 166, 199, 0.2), rgba(193, 100, 63, 0.18));
+      background: linear-gradient(90deg, rgba(255, 60, 85, 0.2), rgba(41, 227, 255, 0.2), rgba(255, 204, 50, 0.2));
       box-shadow: var(--shadow);
     }
     .ribbon-item {
@@ -318,7 +318,7 @@
       padding: 18px;
       box-shadow: var(--shadow);
       background: linear-gradient(var(--panel-strong), var(--panel-strong)) padding-box,
-                  linear-gradient(120deg, rgba(217, 164, 65, 0.42), rgba(122, 166, 199, 0.38), rgba(193, 100, 63, 0.32)) border-box;
+                  linear-gradient(120deg, rgba(255, 204, 50, 0.45), rgba(41, 227, 255, 0.4), rgba(255, 60, 85, 0.35)) border-box;
       min-height: 210px;
       position: relative;
       overflow: hidden;
@@ -338,9 +338,9 @@
       gap: 6px;
       padding: 7px 10px;
       border-radius: 10px;
-      background: rgba(122, 166, 199, 0.18);
-      border: 1px solid rgba(122, 166, 199, 0.32);
-      color: #e9edf3;
+      background: rgba(124, 58, 237, 0.2);
+      border: 1px solid rgba(124, 58, 237, 0.35);
+      color: #e9d5ff;
       font-weight: 600;
       margin-bottom: 10px;
       font-size: 13px;
@@ -364,12 +364,12 @@
       width: 42px;
       height: 42px;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent-2), var(--accent));
-      color: #0f1a24;
+      background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+      color: #0f172a;
       display: grid;
       place-items: center;
       font-weight: 800;
-      box-shadow: 0 10px 25px rgba(122, 166, 199, 0.32);
+      box-shadow: 0 10px 25px rgba(34, 211, 238, 0.35);
     }
     .step h4 { margin: 0 0 6px; font-size: 17px; }
     .step p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 15px; }
@@ -424,7 +424,7 @@
       padding: 30px;
       border-radius: 22px;
       border: 1px solid var(--border);
-      background: linear-gradient(135deg, rgba(122, 166, 199, 0.16), rgba(217, 164, 65, 0.14));
+      background: linear-gradient(135deg, rgba(41, 227, 255, 0.16), rgba(255, 204, 50, 0.14));
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 16px;
@@ -464,14 +464,10 @@
       font-family: inherit;
       font-size: 15px;
     }
-    option {
-      color: #0f1a24;
-      background: #fdf7ed;
-    }
     textarea { min-height: 110px; resize: vertical; }
     .status {
       font-size: 14px;
-      color: var(--accent-2);
+      color: #22d3ee;
       display: none;
     }
     .status.visible { display: inline-flex; align-items: center; gap: 8px; }
@@ -519,15 +515,15 @@
       width: 14px;
       height: 14px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      border: 2px solid #0f1a24;
+      background: linear-gradient(135deg, #ffb703, #8b5cf6);
+      border: 2px solid #0b1021;
       box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.08);
       margin-top: 4px;
     }
     .milestone h4 { margin: 0 0 6px; }
     .milestone p { margin: 0; color: var(--muted); }
     .testimonial {
-      background: linear-gradient(135deg, rgba(122, 166, 199, 0.16), rgba(217, 164, 65, 0.12));
+      background: linear-gradient(135deg, rgba(34, 211, 238, 0.14), rgba(139, 92, 246, 0.14));
       border: 1px solid rgba(255, 255, 255, 0.18);
       border-radius: 18px;
       padding: 18px;
@@ -605,7 +601,7 @@
       padding: 22px;
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.18);
-      background: linear-gradient(120deg, rgba(122, 166, 199, 0.2), rgba(217, 164, 65, 0.18));
+      background: linear-gradient(120deg, rgba(16, 185, 129, 0.18), rgba(34, 211, 238, 0.18));
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -661,7 +657,7 @@
       <a class="btn ghost" href="#contact">Book a walk-through</a>
     </div>
   </header>
-  <div style="height:6px; background:linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-4)); box-shadow:0 8px 22px rgba(0,0,0,0.35);"></div>
+  <div style="height:6px; background:linear-gradient(90deg, var(--accent-2), var(--accent), var(--accent-3)); box-shadow:0 8px 22px rgba(0,0,0,0.35);"></div>
 
   <main class="shell">
     <section class="hero" id="top">
@@ -676,11 +672,11 @@
         <h1>Beautiful paint jobs with a little wow in every room.</h1>
         <p>JL Coe Painting delivers interiors and exteriors that feel intentional—crisp lines, smooth finishes, and a process that keeps life moving while we work.</p>
         <div class="swatches">
-          <div class="swatch" style="background:#d9a441;"></div>
-          <div class="swatch" style="background:#7aa6c7;"></div>
-          <div class="swatch" style="background:#c1643f;"></div>
-          <div class="swatch" style="background:#7bbf72;"></div>
-          <div class="swatch" style="background:#e6ddcf;"></div>
+          <div class="swatch" style="background:#ffb703;"></div>
+          <div class="swatch" style="background:#8b5cf6;"></div>
+          <div class="swatch" style="background:#22d3ee;"></div>
+          <div class="swatch" style="background:#10b981;"></div>
+          <div class="swatch" style="background:#f97316;"></div>
         </div>
         <div class="hero-actions">
           <a class="btn primary" href="#contact">Request a consultation</a>
@@ -932,27 +928,27 @@
       </div>
       <div class="gallery">
         <div class="tile">
-          <img src="assets/IMG_7119.jpg" alt="Entryway with fresh paint and wood details">
-          <div class="label">Entry refresh</div>
+          <img src="assets/IMG_0742.jpg" alt="Interior living space with refined wall finish">
+          <div class="label">Interior refresh</div>
         </div>
         <div class="tile">
-          <img src="assets/IMG_7805.jpg" alt="Exterior project after repaint">
+          <img src="assets/IMG_0743.jpg" alt="Exterior project after repaint">
           <div class="label">Exterior renewal</div>
         </div>
         <div class="tile">
-          <img src="assets/IMG_0501.jpg" alt="Cabinetry and millwork painted with a smooth finish">
+          <img src="assets/IMG_0891.jpg" alt="Cabinetry and millwork painted with a smooth finish">
           <div class="label">Cabinet finish</div>
         </div>
         <div class="tile">
-          <img src="assets/IMG_0322.jpg" alt="Crew preparing surfaces with masking and protection">
+          <img src="assets/IMG_0742.jpg" alt="Crew preparing surfaces with masking and protection">
           <div class="label">Prep in action</div>
         </div>
         <div class="tile">
-          <img src="assets/IMG_0321.jpg" alt="Fine detail painting on trim and entryway">
-          <div class="label">Detail work</div>
+          <img src="assets/IMG_0743.jpg" alt="Fine detail painting on trim and entryway">
+          <div class="label">Entry detail</div>
         </div>
         <div class="tile">
-          <img src="assets/IMG_0304.jpg" alt="Stairwell and hall freshly painted in neutral tones">
+          <img src="assets/IMG_0891.jpg" alt="Stairwell and hall freshly painted in neutral tones">
           <div class="label">Warm neutrals</div>
         </div>
       </div>
@@ -1034,15 +1030,10 @@
           <div>
             <h3>Prefer a conversation?</h3>
             <p>We’ll coordinate a quick walk-through to align on scope, materials, and schedule.</p>
-            <p style="margin:8px 0 0; color: var(--muted); font-size: 14px;">
-              Beulah Rd, Richmond, VA 23237 · (804) 475-6704
-            </p>
           </div>
-          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-            <a class="btn primary" id="cta-email" href="mailto:hello@jlcoepainting.com?subject=Project Consultation">Email the team</a>
-            <a class="btn ghost" id="cta-call" href="tel:+1-804-475-6704">Call to schedule</a>
-            <a class="btn secondary" id="cta-facebook" href="https://www.facebook.com/p/JL-Coe-Painting-100063497202463/" target="_blank" rel="noopener">Visit Facebook</a>
-            <span class="status" id="cta-feedback">Opening your mail or call app…</span>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn primary" href="mailto:hello@jlcoepainting.com?subject=Project Consultation">Email the team</a>
+            <a class="btn ghost" href="tel:+1-000-000-0000">Call to schedule</a>
           </div>
         </div>
         <form id="contact-form">
@@ -1096,27 +1087,6 @@
         form.reset();
       });
     }
-
-    const ctaEmail = document.getElementById('cta-email');
-    const ctaCall = document.getElementById('cta-call');
-    const ctaFacebook = document.getElementById('cta-facebook');
-    const ctaFeedback = document.getElementById('cta-feedback');
-    const showCtaFeedback = (msg) => {
-      if (!ctaFeedback) return;
-      ctaFeedback.textContent = msg;
-      ctaFeedback.classList.add('visible');
-      setTimeout(() => ctaFeedback.classList.remove('visible'), 2800);
-    };
-    if (ctaEmail) {
-      ctaEmail.addEventListener('click', () => showCtaFeedback('Opening your mail app…'));
-    }
-    if (ctaCall) {
-      ctaCall.addEventListener('click', () => showCtaFeedback('Starting a call…'));
-    }
-    if (ctaFacebook) {
-      ctaFacebook.addEventListener('click', () => showCtaFeedback('Opening Facebook…'));
-    }
   </script>
 </body>
 </html>
-
