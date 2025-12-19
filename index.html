@@ -52,7 +52,7 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
     .shell {
-      max-width: 1200px;
+      max-width: 1160px;
       padding: 0 26px;
       margin: 0 auto;
     }
@@ -149,6 +149,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 36px;
+      min-height: clamp(520px, 75vh, 760px);
     }
     .hero::before {
       content: "";
@@ -407,6 +408,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       display: block;
       transition: transform 0.4s ease;
     }
@@ -648,7 +650,16 @@
     .floaty { animation: floaty 9s ease-in-out infinite; }
     @media (max-width: 720px) {
       nav { display: none; }
-      .hero { padding: 32px; }
+      .hero { padding: 28px; min-height: auto; }
+      .hero h1 { font-size: clamp(30px, 8vw, 42px); }
+      .hero-actions { gap: 10px; }
+      .btn { width: 100%; justify-content: center; }
+      .gallery { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+      .cards { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+      .section-head { flex-direction: column; align-items: flex-start; }
+      .shell { padding: 0 18px; }
+      .ribbon, .cta, .cta-banner { padding: 16px; }
+      .tile { min-height: 180px; }
       header { position: static; }
     }
   </style>
@@ -682,10 +693,10 @@
         <div class="orb orb-3 floaty"></div>
       </div>
       <div>
-          <div class="marker">Field-grade finishes · Quiet crews</div>
-          <div class="eyebrow">Detail-driven · Clean job sites · Clear comms</div>
-          <h1>Industrial-calm paintwork with precision in every pass.</h1>
-          <p>JL Coe Painting delivers interiors and exteriors that feel intentional—crisp lines, smooth finishes, and a schedule-managed process that keeps life moving while we work.</p>
+        <div class="marker">Calm crews. Fresh, livable spaces.</div>
+        <div class="eyebrow">Careful prep · Clear updates · Respect for your home</div>
+        <h1>Beautiful paintwork that keeps life running smoothly.</h1>
+        <p>We refresh homes and small businesses with clean lines, soft sheen, and a tidy process that works around your day-to-day.</p>
         <div class="swatches">
           <div class="swatch" style="background:#d0672f;"></div>
           <div class="swatch" style="background:#c8a33a;"></div>
@@ -707,94 +718,13 @@
       <div>
         <div class="card" style="height: 100%;">
           <div class="tag">Project playbook</div>
-          <h3 style="margin: 0 0 10px;">Prep-first, schedule-forward</h3>
-          <p style="margin-bottom: 12px;">We build every project plan around preparation, dust control, and sequencing so the finish is smooth and your space stays livable.</p>
+          <h3 style="margin: 0 0 10px;">Prep-first, people-first</h3>
+          <p style="margin-bottom: 12px;">We plan around your rooms, kids, pets, and business hours so the finish is smooth and the space stays comfortable.</p>
           <div class="hero-grid" style="margin-top: 6px;">
             <div class="chip"><span></span>Dedicated project lead</div>
-            <div class="chip"><span></span>Daily progress check-ins</div>
-            <div class="chip"><span></span>Premium, durable coatings</div>
+            <div class="chip"><span></span>Daily check-ins</div>
+            <div class="chip"><span></span>Low-odor, durable paints</div>
             <div class="chip"><span></span>Respectful, tidy crews</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="ui-system">
-      <div class="section-head">
-        <div>
-          <h2>ARC-inspired UI kit</h2>
-          <p>Palette, type scale, and alert states for a consistent look.</p>
-        </div>
-        <div class="pill">Low-sat · Rust accents · Stencil heads</div>
-      </div>
-      <div class="grid-3">
-        <div class="card">
-          <div class="tag">Palette</div>
-          <div class="swatch-row" style="margin:4px 0 12px;">
-            <div class="swatch-tile" style="background:#0a0c10;" title="Charcoal base"></div>
-            <div class="swatch-tile" style="background:#161a23;" title="Gunmetal panel"></div>
-            <div class="swatch-tile" style="background:#d0672f;" title="Rust CTA"></div>
-            <div class="swatch-tile" style="background:#c8a33a;" title="Hazard yellow"></div>
-            <div class="swatch-tile" style="background:#4a6b82;" title="Steel glow"></div>
-          </div>
-          <p class="listy">
-            <span>Use rust for CTAs, yellow for tags, red for warnings.</span>
-            <span>Keep accents under 10% of a view.</span>
-          </p>
-        </div>
-        <div class="card">
-          <div class="tag">Type scale</div>
-          <p class="listy">
-            <span><strong style="font-family:'Bebas Neue',sans-serif; letter-spacing:0.08em;">48 / 38 / 28 / 22</strong> — stencil heads</span>
-            <span><strong>16 / 15 / 14</strong> — body, muted, labels</span>
-            <span>Letter spacing on nav + tags for the industrial feel.</span>
-          </p>
-        </div>
-        <div class="card">
-          <div class="tag">States</div>
-          <div class="listy">
-            <span><strong style="color:#d0672f;">Rust</strong>: primary CTA</span>
-            <span><strong style="color:#c8a33a;">Hazard</strong>: caution tags</span>
-            <span><strong style="color:#b94b4b;">Warning</strong>: critical/error</span>
-            <span><strong style="color:#4a6b82;">Steel</strong>: subtle glow, focus ring</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="inner-template">
-      <div class="section-head">
-        <div>
-          <h2>Inner page template</h2>
-          <p>Modular layout for services, project briefs, or FAQs.</p>
-        </div>
-        <div class="pill">Sidebar + content · Rust CTAs</div>
-      </div>
-      <div class="grid-3">
-        <div class="card" style="grid-column: span 2;">
-          <div class="tag">Content panel</div>
-          <h3>Section heading</h3>
-          <p style="color: var(--muted);">Use for detailed service descriptions, scope outlines, or project briefs. Keep body copy 16px with tight leading, and break long reads with mini dividers.</p>
-          <div class="accent-line"></div>
-          <p class="listy">
-            <span>Chunk content into 2–3 paragraph blocks.</span>
-            <span>Use chips for highlights and small status tags for timelines.</span>
-          </p>
-          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
-            <a class="btn primary" href="#contact">Primary CTA</a>
-            <a class="btn ghost" href="#top">Secondary</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="tag">Sidebar</div>
-          <div class="listy">
-            <span>Use tags for status: <strong style="color:#c8a33a;">Scheduled</strong></span>
-            <span>Checklist, links, and quick contacts.</span>
-            <span>Alert styles: <strong style="color:#b94b4b;">Warning</strong> for blockers.</span>
-          </div>
-          <div style="margin-top:10px;">
-            <div class="chip" style="margin-bottom:8px;">Rust CTA · Compact</div>
-            <div class="chip" style="background:rgba(200,163,58,0.16); border-color:rgba(200,163,58,0.3);">Hazard tag</div>
           </div>
         </div>
       </div>
@@ -819,8 +749,8 @@
     <section id="services">
       <div class="section-head">
         <div>
-          <h2>Services built for refined spaces</h2>
-          <p>Clean lines, smooth substrates, and finishes that stand up to daily life.</p>
+          <h2>Services for homes and light commercial</h2>
+          <p>Clean lines, smooth walls, and finishes that hold up to busy days.</p>
         </div>
         <a class="btn secondary" href="#contact">Plan my project</a>
       </div>
@@ -828,22 +758,22 @@
         <div class="card">
           <div class="tag">Interiors</div>
           <h3>Walls, ceilings, trim</h3>
-          <p>Flawless substrates with careful patching, caulking, sanding, and premium paints tailored to each room’s use.</p>
+          <p>Careful patching and sanding, crisp lines, and paints matched to how each room lives.</p>
         </div>
         <div class="card">
           <div class="tag">Exteriors</div>
           <h3>Siding, masonry, entryways</h3>
-          <p>Surface prep, weather-ready primers, and coatings selected for your specific materials and exposure.</p>
+          <p>Wash, prep, and weather-ready coatings that protect siding, brick, and entryways.</p>
         </div>
         <div class="card">
           <div class="tag">Fine finishes</div>
           <h3>Cabinets & millwork</h3>
-          <p>Clean-room style setup, meticulous sanding, and sprayed finishes for smooth, furniture-grade results.</p>
+          <p>Cabinet and trim refinishing with smooth sprayed or brushed finishes that look built-in.</p>
         </div>
         <div class="card">
           <div class="tag">Commercial</div>
           <h3>Business-ready timelines</h3>
-          <p>Phased schedules, low-odor systems, and night or off-hour work to keep operations moving.</p>
+          <p>Phased schedules, low-odor options, and after-hours work to keep your doors open.</p>
         </div>
       </div>
       <div class="mini-grid" style="margin-top:16px;">
@@ -913,37 +843,53 @@
     <section id="process">
       <div class="section-head">
         <div>
-          <h2>A clear, managed process</h2>
-          <p>Every phase is planned so you always know what’s next.</p>
+          <h2>A clear, calm process</h2>
+          <p>Easy steps, daily updates, and tidy spaces while we work.</p>
         </div>
       </div>
       <div class="process">
         <div class="step">
           <div class="step-index">01</div>
           <div>
-            <h4>Walk-through & scope</h4>
-            <p>We listen to your goals, identify surfaces and repairs, and outline options that respect your schedule.</p>
+            <h4>Walk-through & plan</h4>
+            <p class="listy">
+              <span>Listen to goals and rooms that matter most.</span>
+              <span>Note repairs, colors, and timing needs.</span>
+              <span>Share a clear schedule and prep plan.</span>
+            </p>
           </div>
         </div>
         <div class="step">
           <div class="step-index">02</div>
           <div>
             <h4>Prep & protection</h4>
-            <p>Masking, floor and furniture protection, repairs, sanding, and primers chosen for the substrate.</p>
+            <p class="listy">
+              <span>Cover floors, furniture, and fixtures.</span>
+              <span>Repair, sand, and prime for a smooth base.</span>
+              <span>Low-odor options to keep rooms livable.</span>
+            </p>
           </div>
         </div>
         <div class="step">
           <div class="step-index">03</div>
           <div>
-            <h4>Finish application</h4>
-            <p>Brushed, rolled, or sprayed to match the space, with attention to clean lines, coverage, and sheen uniformity.</p>
+            <h4>Paint & detail</h4>
+            <p class="listy">
+              <span>Brush, roll, or spray matched to the finish you want.</span>
+              <span>Clean lines, even sheen, and daily check-ins.</span>
+              <span>Rooms turned over as we go so you can use them.</span>
+            </p>
           </div>
         </div>
         <div class="step">
           <div class="step-index">04</div>
           <div>
-            <h4>Turnover & care</h4>
-            <p>Guided walkthrough, labeled touch-up kit, and care tips so the finish stays sharp.</p>
+            <h4>Wrap-up & care</h4>
+            <p class="listy">
+              <span>Walk the space together and note touch-ups.</span>
+              <span>Leave labeled cans and a small touch-up kit.</span>
+              <span>Care tips so the finish keeps looking fresh.</span>
+            </p>
           </div>
         </div>
       </div>
@@ -952,21 +898,21 @@
           <div class="dot"></div>
           <div>
             <h4>Prep day</h4>
-            <p>Protection down, repairs mapped, primers selected for each substrate.</p>
+            <p>Protection goes down and repairs are mapped before paint opens.</p>
           </div>
         </div>
         <div class="milestone">
           <div class="dot"></div>
           <div>
             <h4>Color lock</h4>
-            <p>Test patches in live light; we adjust sheen and hue before full coverage.</p>
+            <p>Test patches in real light; adjust hue or sheen before full coverage.</p>
           </div>
         </div>
         <div class="milestone">
           <div class="dot"></div>
           <div>
             <h4>Finish pass</h4>
-            <p>Clean lines, even sheen, and room-by-room turnovers to keep life moving.</p>
+            <p>Final coat, edges checked, and room-by-room turnover so life keeps moving.</p>
           </div>
         </div>
       </div>
@@ -1060,7 +1006,7 @@
       </div>
       <div class="grid-3">
         <div class="testimonial">
-          <div class="quote">“They staged the project so we could keep living in the house. The lines are razor sharp and the cabinets look factory finished.”</div>
+          <div class="quote">“They staged the project so we could keep living in the house. The lines are razor sharp and the cabinets look like custom built-ins.”</div>
           <small>— J. Ramirez, interior repaint</small>
         </div>
         <div class="testimonial">
